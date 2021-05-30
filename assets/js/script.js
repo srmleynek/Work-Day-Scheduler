@@ -1,0 +1,1 @@
+alert("this is an alert to link js");
