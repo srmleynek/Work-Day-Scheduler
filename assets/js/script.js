@@ -1,3 +1,10 @@
+$(".saveBtn").on("click", function() {
+    var descrip = $(this).siblings(".description").val();
+    var hour = $(this).parent().attr("id");
+
+    localStorage.setItem(hour, descrip);
+});
+
 function hourColorChange() {
     var currentHour = moment().hours();
 
@@ -17,3 +24,5 @@ function hourColorChange() {
         $(this).addClass("future");
     }
 };
+
+// get the id of each time-block
